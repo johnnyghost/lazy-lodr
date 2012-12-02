@@ -102,6 +102,7 @@
     // A really lightweight plugin wrapper around the constructor,
     // preventing against multiple instantiations
     $.fn[name] = function (options) {
+
         return this.each(function () {
             if (!$.data(this, 'plugin_' + name)) {
                 $.data(this, 'plugin_' + name, new LazyLodr(this, options));
