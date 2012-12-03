@@ -3,9 +3,10 @@
 /**
  * Lazy loading.
  *
+ * @version 0.1.0
+ *
  * @author João Henriques
  * @contact joao@iknowaghost.com
- * @version 0.1.0
  */
 (function (root, factory) {
 
