@@ -39,7 +39,7 @@
          * Initialize the plugin.
          *
          */
-         function initialize () {
+        function initialize() {
 
             container.scroll($.proxy(render, this));
             container.resize($.proxy(render, this));
@@ -51,7 +51,7 @@
          * Calculate the viewport.
          *
          */
-        function viewportCalculus () {
+        function viewportCalculus() {
 
             $(document).ready($.proxy(function () {
                 window.setTimeout($.proxy(function () {
@@ -66,7 +66,7 @@
          *
          * @param  {Element} element The element to be loaded
          */
-        function loadImage (element) {
+        function loadImage(element) {
 
             var realSource = element.getAttribute('data-src');
             element.setAttribute('src', realSource);
@@ -75,7 +75,7 @@
         /**
          * Render the images.
          */
-        function render () {
+        function render() {
 
             var that   = this,
                 cs     = container.height(),     // Container size
@@ -87,7 +87,7 @@
                 var et = $(this).offset().top;   // Element top
 
                 if (et >= ct - options.range && et <= cb + options.range) {
-                    if(this.getAttribute('data-src') !== this.getAttribute('src')) {
+                    if (this.getAttribute('data-src') !== this.getAttribute('src')) {
                         loadImage(this);
                     }
                 }
