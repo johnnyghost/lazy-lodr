@@ -74,6 +74,7 @@
 
         /**
          * Render the images.
+         *
          */
         function render() {
 
